@@ -1,0 +1,6 @@
+[submodule "thirdparty/DebugEdge"]
+	path = thirdparty/DebugEdge
+	url = ../../debug-edge/DebugEdge.git
+[submodule "kicadlib"]
+	path = kicadlib
+	url = ../kicadlib.git

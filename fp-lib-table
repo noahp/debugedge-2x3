@@ -1,0 +1,4 @@
+(fp_lib_table
+  (lib (name kicadlib)(type KiCad)(uri ${KIPRJMOD}/kicadlib/kicadlib.pretty)(options "")(descr ""))
+  (lib (name Connector_DebugEdge)(type KiCad)(uri ${KIPRJMOD}/thirdparty/DebugEdge/Connector_DebugEdge.pretty)(options "")(descr ""))
+)
