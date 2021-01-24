@@ -1,6 +1,6 @@
 # debugedge 2x3 adapter
 
-Basic debugedge 2x3 only adapter.
+Basic debugedge **2x3 only** adapter.
 
 ![top](debugedge-2x3_top.png) ![bottom](debugedge-2x3_bottom.png)
 

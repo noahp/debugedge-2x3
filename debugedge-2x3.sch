@@ -25,31 +25,16 @@ F 3 "http://infocenter.arm.com/help/topic/com.arm.doc.faqs/attached/13634/cortex
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector_DebugEdge:DebugEdge_02x03 J2
-U 1 1 5FF7E7FA
-P 5100 2450
-F 0 "J2" H 5894 2496 50  0000 L CNN
-F 1 "DebugEdge_02x03" H 5894 2405 50  0000 L CNN
-F 2 "Connector_DebugEdge:DebugEdge_2x03_Target" H 5100 2850 50  0001 C CNN
-F 3 "" H 5100 2850 50  0001 C CNN
-	1    5100 2450
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:GND #PWR0101
 U 1 1 5FF7F2E3
-P 5400 1800
-F 0 "#PWR0101" H 5400 1550 50  0001 C CNN
-F 1 "GND" H 5405 1627 50  0000 C CNN
-F 2 "" H 5400 1800 50  0001 C CNN
-F 3 "" H 5400 1800 50  0001 C CNN
-	1    5400 1800
+P 5150 3250
+F 0 "#PWR0101" H 5150 3000 50  0001 C CNN
+F 1 "GND" H 5155 3077 50  0000 C CNN
+F 2 "" H 5150 3250 50  0001 C CNN
+F 3 "" H 5150 3250 50  0001 C CNN
+	1    5150 3250
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	5400 1800 5100 1800
-Wire Wire Line
-	5100 1800 5100 2100
 $Comp
 L power:GND #PWR0102
 U 1 1 5FF7F788
@@ -86,23 +71,19 @@ Wire Wire Line
 $Comp
 L power:+3.3V #PWR0104
 U 1 1 5FF806B5
-P 5300 3050
-F 0 "#PWR0104" H 5300 2900 50  0001 C CNN
-F 1 "+3.3V" H 5315 3223 50  0000 C CNN
-F 2 "" H 5300 3050 50  0001 C CNN
-F 3 "" H 5300 3050 50  0001 C CNN
-	1    5300 3050
+P 5200 4400
+F 0 "#PWR0104" H 5200 4250 50  0001 C CNN
+F 1 "+3.3V" H 5215 4573 50  0000 C CNN
+F 2 "" H 5200 4400 50  0001 C CNN
+F 3 "" H 5200 4400 50  0001 C CNN
+	1    5200 4400
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	5300 3050 5100 3050
-Wire Wire Line
-	5100 3050 5100 2800
 Text Label 2700 2500 0    50   ~ 0
 ~RESET
-Text Label 4350 2550 2    50   ~ 0
+Text Label 4200 3850 2    50   ~ 0
 ~RESET
-Text Label 4350 2350 2    50   ~ 0
+Text Label 4200 3650 2    50   ~ 0
 SWDIO
 Text Label 2700 2800 0    50   ~ 0
 SWDIO
@@ -110,9 +91,32 @@ Text Label 2700 2700 0    50   ~ 0
 SWDCLK
 Text Label 2700 2900 0    50   ~ 0
 SWO
-Text Label 5850 2450 0    50   ~ 0
+Text Label 5700 3550 0    50   ~ 0
 SWO
-Text Label 4350 2450 2    50   ~ 0
+Text Label 4200 3750 2    50   ~ 0
 SWDCLK
 NoConn ~ 2700 3000
+$Comp
+L Connector_DebugEdge:DebugEdge_02x05 J2
+U 1 1 600DAF2F
+P 4950 3750
+F 0 "J2" H 5450 3450 50  0000 C CNN
+F 1 "DebugEdge_02x05" H 5750 3350 50  0000 C CNN
+F 2 "Connector_DebugEdge:DebugEdge_2x05_Host" H 4950 4150 50  0001 C CNN
+F 3 "" H 4950 4150 50  0001 C CNN
+	1    4950 3750
+	1    0    0    -1  
+$EndComp
+NoConn ~ 5700 3650
+NoConn ~ 5700 3750
+NoConn ~ 5700 3850
+NoConn ~ 5700 3950
+Wire Wire Line
+	4950 4100 4950 4400
+Wire Wire Line
+	4950 4400 5200 4400
+Wire Wire Line
+	5150 3250 4950 3250
+Wire Wire Line
+	4950 3250 4950 3400
 $EndSCHEMATC
